@@ -1,0 +1,117 @@
+@font-face {
+	src: url("../fonts/SF-UI-Display-Bold.otf");
+	font-family: "SF Display bold";
+  	font-weight: 700;
+}
+@font-face {
+  font-family: "SF Display light";
+  font-weight: 200;
+  src: url("../fonts/SF-UI-Display-Light.otf");
+}
+@font-face {
+  font-family: "SF Display";
+  font-weight: 500;
+  src: url("../fonts/SF-UI-Display-Medium.otf");
+}
+
+.text-right{
+	text-align: right;
+}
+.position-relative{
+	position: relative;
+}
+
+/*HEADER*/
+html, body{
+	width: 100%;
+	height: 100%;
+	margin: 0;
+	padding: 0;
+}
+header{
+	background: url('../img/bg-top.jpg');
+	background-size: cover;
+	background-position: top right;
+	height: 433px;
+	width: 100%; 
+}
+header div.container{
+	position: relative;
+}
+header h1{
+	color: #fff;
+	font-size: 50px;
+    padding-top: 12%;
+    font-family: "SF Display bold";
+}
+img.logo-vogel {
+    width: 75%;
+    margin-top: 22%;
+}
+header figure img{
+	width: 100%;
+}
+
+/*DESTAQUE*/
+section.destaque{
+	margin-top: -167px;
+}
+figure.img-destaque img {
+    width: 100%;
+}
+
+/*SOMOS VOGEL*/
+.title-vogel{
+	font-size: 120px;
+	font-family: "SF Display bold";
+}
+figure.detalhe-title {
+    position: absolute;
+    left: -145px;
+}
+.text-description{
+    width: 47%;
+    font-family: "SF Display light";
+    font-size: 35px;
+    line-height: 1.5;
+    margin-top: -100px;
+}
+figure.detalhe-pontilhados{
+	position: absolute;
+	right: -140px;
+	margin-top: 10px;
+}
+
+/*PROMOCOES*/
+.pessoas-reuniao{
+	width: 100%;
+}
+h2.internet-corporativa {
+    font-size: 80px;
+    width: 70%;
+    font-family: "SF Display bold";
+}
+.descricao-internet-corporativa{
+	font-family: "SF Display light";
+	font-size: 40px;
+	padding-top: 15px
+}
+.quadro-esquerdo{
+	width: 190px;
+}
+.quadro-velocidade{
+	border: 1px solid #7cce3f;
+	text-align: center;
+	font-family: "SF Display bold";
+}
+.titulo-velocidade{
+	background: #7cce3f;
+	padding: 10px 0;
+}
+.titulo-velocidade span{
+	font-size: 30px
+}
+.valor{
+	padding: 10px 0;
+	font-family: "SF Display light";
+}
