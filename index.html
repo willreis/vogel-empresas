@@ -78,8 +78,8 @@
             <p class="informativo-solucoes">
               Quer ter acesso as melhores soluções de conectividade corporativa?
             </p>
-            <div class="btn-contrate">
-              Contrate Aqui
+            <div id="linkContratar" class="btn-contrate">
+              <div style="width:100%; height: 100%; cursor:pointer!important">Contrate Aqui</div>
             </div>
           </div>
           <div class="col-md-6">
@@ -284,6 +284,10 @@
             if(divclass)
               $('.'+divclass).show();
         });
+      });
+
+      $('#linkContratar').click(function(){
+        window.open('http://www.vogeltelecom.com/contratar/');
       });
     </script>
   </body>

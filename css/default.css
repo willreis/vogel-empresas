@@ -201,6 +201,7 @@ p.descricao-direita span{
     font-size: 22px;
     padding: 5px 0;
     margin-top: 15px;
+    cursor: pointer;
 }
 /*FOOTER*/
 footer{
