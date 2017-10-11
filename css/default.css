@@ -25,6 +25,9 @@
 .position-relative{
 	position: relative;
 }
+.divdoselect{
+	display:none;
+}
 
 /*HEADER*/
 html, body{
@@ -37,7 +40,7 @@ header{
 	background: url('../img/bg-top.jpg');
 	background-size: cover;
 	background-position: top right;
-	height: 433px;
+    height: 365px;
 	width: 100%; 
 }
 header div.container{
@@ -46,12 +49,12 @@ header div.container{
 header h1{
 	color: #fff;
 	font-size: 50px;
-    padding-top: 12%;
+    padding-top: 6%;
     font-family: "SF Display bold";
 }
 img.logo-vogel {
     width: 75%;
-    margin-top: 22%;
+    margin-top: 10%;
 }
 header figure img{
 	width: 100%;
@@ -67,19 +70,18 @@ figure.img-destaque img {
 
 /*SOMOS VOGEL*/
 .title-vogel{
-	font-size: 120px;
+	font-size: 80px;
 	font-family: "SF Display bold";
 }
 figure.detalhe-title {
     position: absolute;
-    left: -145px;
+    left: -375px;
 }
 .text-description{
-    width: 47%;
     font-family: "SF Display light";
-    font-size: 35px;
+    font-size: 25px;
     line-height: 1.5;
-    margin-top: -100px;
+    margin-top: 100px;
 }
 figure.detalhe-pontilhados{
 	position: absolute;
@@ -88,19 +90,24 @@ figure.detalhe-pontilhados{
 }
 
 /*PROMOCOES*/
+.promocoes{
+    margin-top: 50px;
+}
 .pessoas-reuniao{
-	width: 100%;
+	width: 88%;
     margin-left: -15px;
 }
 h2.internet-corporativa {
-    font-size: 80px;
+    font-size: 65px;
     width: 70%;
     font-family: "SF Display bold";
 }
 .descricao-internet-corporativa{
 	font-family: "SF Display light";
 	font-size: 40px;
-	padding-top: 15px
+	padding-top: 15px;
+	line-height: 1;
+	margin-bottom: 50px;
 }
 .quadro-esquerdo{
 	width: 230px;

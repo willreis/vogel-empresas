@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <!-- The above 3 meta tags *must* come first in the head; any other head content must come *after* these tags -->
-    <title>Bootstrap 101 Template</title>
+    <title>Internet Corporativa - Vogel</title>
 
     <!-- Bootstrap -->
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
@@ -49,17 +49,15 @@
     <section class="somos-vogel">
       <div class="container">
         <div class="row">
-          <div class="col-md-7 position-relative">
+          <div class="col-md-6 position-relative">
             <h1 class="title-vogel">
-              Nós somos a Vogel
+              Nós somos <br>a Vogel
             </h1>
             <figure class="detalhe-title">
               <img src="img/detalhe-title.png" alt="Detalhe título">
             </figure>
           </div>
-        </div>
-        <div class="row">
-          <div class="col-md-6 pull-right position-relative">
+          <div class="col-md-6 position-relative">
             <p class="text-description">
               A maior empresa de Telecom do Brasil, 100% dedicada ao mercado corporativo e com as melhores soluções de conectividade.
             </p>
@@ -86,7 +84,7 @@
           </div>
           <div class="col-md-6">
             <figure class="text-right">
-              <img src="img/detalhes-pontilhados.jpg" alt="Detalhe Conteúdo">
+              <img style="width: 300px;" src="img/detalhes-pontilhados.jpg" alt="Detalhe Conteúdo">
             </figure>
             <h2 class="internet-corporativa">
               Nossa internet corporativa
@@ -95,7 +93,7 @@
               com ofertas exclusivas*<br>
               por período promocional.
             </p>
-            <div class="quadro-esquerdo">
+            <div class="quadro-esquerdo divdoselect sp" id="sp">
               <div class="quadro-velocidade">
                 <div class="titulo-velocidade">
                   <span>10Mb</span>
@@ -120,16 +118,95 @@
                   R$3.199,00
                 </div>
               </div>
+            </div> 
+            <div class="quadro-esquerdo divdoselect rj" id="rj">
+              <div class="quadro-velocidade">
+                <div class="titulo-velocidade">
+                  <span>10Mb</span>
+                </div>
+                <div class="valor">
+                  R$885,00
+                </div>
+              </div>
+              <div class="quadro-velocidade">
+                <div class="titulo-velocidade">
+                  <span>30Mb</span>
+                </div>
+                <div class="valor">
+                  R$1.662,00
+                </div>
+              </div>
+              <div class="quadro-velocidade">
+                <div class="titulo-velocidade">
+                  <span>100Mb</span>
+                </div>
+                <div class="valor">
+                  R$3.546,00
+                </div>
+              </div>
+            </div>
+            <div class="quadro-esquerdo divdoselect bh" id="bh">
+              <div class="quadro-velocidade">
+                <div class="titulo-velocidade">
+                  <span>10Mb</span>
+                </div>
+                <div class="valor">
+                  R$822,00
+                </div>
+              </div>
+              <div class="quadro-velocidade">
+                <div class="titulo-velocidade">
+                  <span>30Mb</span>
+                </div>
+                <div class="valor">
+                  R$1.542,00
+                </div>
+              </div>
+              <div class="quadro-velocidade">
+                <div class="titulo-velocidade">
+                  <span>100Mb</span>
+                </div>
+                <div class="valor">
+                  R$3.291,00
+                </div>
+              </div>
+            </div>            
+            <div class="quadro-esquerdo divdoselect poa" id="poa">
+              <div class="quadro-velocidade">
+                <div class="titulo-velocidade">
+                  <span>10Mb</span>
+                </div>
+                <div class="valor">
+                  R$859,00
+                </div>
+              </div>
+              <div class="quadro-velocidade">
+                <div class="titulo-velocidade">
+                  <span>30Mb</span>
+                </div>
+                <div class="valor">
+                  R$1.649,00
+                </div>
+              </div>
+              <div class="quadro-velocidade">
+                <div class="titulo-velocidade">
+                  <span>100Mb</span>
+                </div>
+                <div class="valor">
+                  R$3.519,00
+                </div>
+              </div>
             </div>
             <div class="quadro-direita">
               <p class="titulo-direita">Escolha sua cidade:</p>
               <form action="#" class="input-group">
                 <div class="form-group">
-                  <select name="cidade" id="cidade">
-                    <option value="São Paulo">São Paulo</option>
-                    <option value="Belo Horizonte">Belo Horizonte</option>
-                    <option value="Porto Alegre">Porto Alegre</option>
-                    <option value="Rio de Janeiro">Rio de Janeiro</option>
+                  <select name="cidade" id="cidade" onchange="mostraCidade();">
+                    <option value="">Escolha sua cidade:</option>
+                    <option data-div="bh" value="bh">Belo Horizonte</option>
+                    <option data-div="poa" value="poa">Porto Alegre</option>
+                    <option data-div="rj" value="rj">Rio de Janeiro</option>
+                    <option data-div="sp" value="sp">São Paulo</option>
                   </select>
                 </div>
               </form>
@@ -173,8 +250,17 @@
             <figure class="barra-footer">
               <img src="img/barra-footer.jpg" alt="Barra verde Rodapé">
             </figure> 
-            <p class="termos-footer">
+            <p class="termos-footer divdoselect sp" id="footerSp">
               *Condições válidas exclusivamente para prédios comerciais em São Paulo, já abordados pela Vogel e para contratos firmados entre 01/10/2017 e 31/12/2017, com duração de 36 meses.
+            </p> 
+            <p class="termos-footer divdoselect rj" id="footerRj">
+              *Condições válidas exclusivamente para prédios comerciais no Rio de Janeiro, já abordados pela Vogel e para contratos firmados entre 01/10/2017 e 31/12/2017, com duração de 36 meses.
+            </p> 
+            <p class="termos-footer divdoselect bh" id="footerMg">
+              *Condições válidas exclusivamente para prédios comerciais em Belo Horizonte, já abordados pela Vogel e para contratos firmados entre 01/10/2017 e 31/12/2017, com duração de 36 meses.
+            </p>  
+            <p class="termos-footer divdoselect poa" id="footerPoa">
+              *Condições válidas exclusivamente para prédios comerciais em Porto Alegre, já abordados pela Vogel e para contratos firmados entre 01/10/2017 e 31/12/2017, com duração de 36 meses.
             </p> 
           </div>
           <div class="col-md-3">
@@ -185,9 +271,20 @@
         </div>
       </div>
     </footer>
+
     <!-- jQuery (necessary for Bootstrap's JavaScript plugins) -->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
     <!-- Include all compiled plugins (below), or include individual files as needed -->
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
+    <script>
+      $(document).ready(function(){
+        $('select').change(function(){
+            $('.divdoselect').hide();
+            var divclass = $('option:selected',this).attr('data-div');
+            if(divclass)
+              $('.'+divclass).show();
+        });
+      });
+    </script>
   </body>
 </html>
