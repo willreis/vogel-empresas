@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="pt-br">
   <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -23,11 +23,11 @@
   <body>
     <header>
       <div class="container">
-        <div class="row">
-          <div class="col-md-7">
+        <div class="row margin-top30">
+          <div class=" col-sm-12 col-xs-12 col-md-7">
             <h1>Internet corporativa de verdade?</h1>
           </div>
-          <div class="col-md-5">
+          <div class="col-md-5 col-sm-12 col-xs-12">
             <figure class="text-right">
               <img class="logo-vogel" src="img/logo-header.png" alt="Logo Vogel">
             </figure>
@@ -35,21 +35,21 @@
         </div>
       </div>
     </header>
-    <section class="destaque">
+<!--     <section class="destaque">
       <div class="container">
         <div class="row destaque-header">
-          <div class="col-md-12 ">
+          <div class="col-md-12 col-sm-12 col-xs-12">
             <figure class="img-destaque">
               <img src="img/destaque-header.jpg" alt="Destaque Vogel">
             </figure>
           </div>
         </div>
       </div>
-    </section>
+    </section> -->
     <section class="somos-vogel">
       <div class="container">
         <div class="row">
-          <div class="col-md-6 position-relative">
+          <div class="col-md-6 col-sm-12 col-xs-12 position-relative">
             <h1 class="title-vogel">
               Nós somos <br>a Vogel
             </h1>
@@ -57,7 +57,7 @@
               <img src="img/detalhe-title.png" alt="Detalhe título">
             </figure>
           </div>
-          <div class="col-md-6 position-relative">
+          <div class="col-md-6 col-sm-12 col-xs-12 position-relative">
             <p class="text-description">
               A maior empresa de Telecom do Brasil, 100% dedicada ao mercado corporativo e com as melhores soluções de conectividade.
             </p>
@@ -66,25 +66,35 @@
       </div>
     </section>
     <section class="promocoes">
-      <div class="container-fluid">
+      <div class="container">
         <div class="row">
-          <div class="col-md-6">
+          <div class="col-md-6 col-sm-12 col-xs-12">
             <figure>
               <img class="pessoas-reuniao" src="img/pessoas-reuniao.png" alt="Pessoas no trabalho">
             </figure>
-            <figure class="pontilhados-pequeno">
-              <img src="img/pontilhados-pequeno.jpg" alt="Detalhe Pontilhado">
+            <h3 class="internet-corporativa">
+              Vantagens da internet corporativa Vogel:
+            </h3>
+            <div class="info-internet">
+              <p>*Internet dedicada, ou seja, 100% de garantia da banda contratada;</p>
+              <p>*Transmissão simétrica de dados: velocidade de download igual a de upload;</p>
+              <p>*Rede de fibra óptica própria e alta disponibilidade para seu negócio</p>
+              <p>*Entrega de 05 IPs válidos (/29) e roteador incluso</p>
+            </div>
+            <figure class="pontilhados-pequeno hidden-sm hidden-xs">
+              <img  src="img/pontilhados-pequeno.jpg" alt="Detalhe Pontilhado">
             </figure>
             <p class="informativo-solucoes">
               Quer ter acesso as melhores soluções de conectividade corporativa?
             </p>
-            <div id="linkContratar" class="btn-contrate">
+           
+            <div id="linkContratar" class="btn-contrate hidden-xs hidden-sm">
               <div style="width:100%; height: 100%; cursor:pointer!important">Contrate Aqui</div>
             </div>
-          </div>
-          <div class="col-md-6">
+          </div> 
+          <div class="col-md-6 col-sm-12 col-xs-12">
             <figure class="text-right">
-              <img style="width: 300px;" src="img/detalhes-pontilhados.jpg" alt="Detalhe Conteúdo">
+              <img class="pontilhado-conteudo hidden-sm hidden-xs" src="img/detalhes-pontilhados.jpg" alt="Detalhe Conteúdo">
             </figure>
             <h2 class="internet-corporativa">
               Nossa internet corporativa
@@ -197,6 +207,32 @@
                 </div>
               </div>
             </div>
+            <div class="quadro-esquerdo divdoselect sal" id="sal">
+              <div class="quadro-velocidade">
+                <div class="titulo-velocidade">
+                  <span>10Mb</span>
+                </div>
+                <div class="valor">
+                  R$834,00
+                </div>
+              </div>
+              <div class="quadro-velocidade">
+                <div class="titulo-velocidade">
+                  <span>30Mb</span>
+                </div>
+                <div class="valor">
+                  R$1.564,00
+                </div>
+              </div>
+              <div class="quadro-velocidade">
+                <div class="titulo-velocidade">
+                  <span>100Mb</span>
+                </div>
+                <div class="valor">
+                  R$3.339,00
+                </div>
+              </div>
+            </div>
             <div class="quadro-direita">
               <p class="titulo-direita">Escolha sua cidade:</p>
               <form action="#" class="input-group">
@@ -206,6 +242,7 @@
                     <option data-div="bh" value="bh">Belo Horizonte</option>
                     <option data-div="poa" value="poa">Porto Alegre</option>
                     <option data-div="rj" value="rj">Rio de Janeiro</option>
+                    <option data-div="sal" value="sal">Salvador</option>
                     <option data-div="sp" value="sp">São Paulo</option>
                   </select>
                 </div>
@@ -216,8 +253,7 @@
                 de internet dedicada,<br> 
                 soluções de dados<br> 
                 e de voz, em condições<br> 
-                especiais, acesse<br> 
-                <span>vogeltelecom.com/prediovogel</span><br>
+                especiais, <a href="http://www.vogeltelecom.com/contratar/">clique aqui</a><br>
                 ou ligue no <span>0800 800 7878*</span>.
               </p>
               <div class="aviso-importante">
@@ -231,6 +267,11 @@
                 <div class="codigo-promocional">
                   #PREDIOVOGEL
                 </div>
+                <a href="http://www.vogeltelecom.com/contratar/" target="blank">
+                  <div id="linkContratar" class="btn-contrate mobile">
+                    <div style="width:100%; height: 100%; cursor:pointer!important">Contrate Aqui</div>
+                  </div>
+                </a>
               </div>
             </div>
           </div>
@@ -241,9 +282,9 @@
     <footer>
       <div class="container">
         <div class="row">
-          <div class="col-md-9">
+          <div class="col-md-9  col-sm-12 col-xs-12">
             <div class="infos-footer">
-              <a href="http://www.vogeltelecom.com.br" target="blank">vogeltelecom.com.br</a>
+              <a href="http://www.vogeltelecom.com" target="blank">vogeltelecom.com</a>
               <a href="https://www.facebook.com/vogeltelecom" target="blank"><span class="icons-footer"><i class="fa fa-facebook" aria-hidden="true"></i></span></a>
               <a href="https://www.linkedin.com/company/9359036/" target="blank"><span class="icons-footer"><i class="fa fa-linkedin" aria-hidden="true"></i></span></a>
             </div>
@@ -262,8 +303,14 @@
             <p class="termos-footer divdoselect poa" id="footerPoa">
               *Condições válidas exclusivamente para prédios comerciais em Porto Alegre, já abordados pela Vogel e para contratos firmados entre 01/10/2017 e 31/12/2017, com duração de 36 meses.
             </p> 
+            <p class="termos-footer divdoselect sal" id="footerSal">
+              *Condições válidas exclusivamente para prédios comerciais em Salvador, já abordados pela Vogel e para contratos firmados entre 01/10/2017 e 31/12/2017, com duração de 36 meses.
+            </p> 
+            <p class="termos-footer">
+              *Sujeito a taxa de instalação.
+            </p>
           </div>
-          <div class="col-md-3">
+          <div class="col-md-3 col-sm-12 col-xs-12">
             <figure class="logo-footer">
               <a href="http://www.vogeltelecom.com.br" target="blank"><img src="img/logo-footer.jpg" alt="Logo Vogel"></a>
             </figure>

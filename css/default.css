@@ -40,7 +40,7 @@ header{
 	background: url('../img/bg-top.jpg');
 	background-size: cover;
 	background-position: top right;
-    height: 365px;
+    height: 260px;
 	width: 100%; 
 }
 header div.container{
@@ -49,12 +49,12 @@ header div.container{
 header h1{
 	color: #fff;
 	font-size: 50px;
-    padding-top: 6%;
+    padding-top: 12%;
     font-family: "SF Display bold";
 }
 img.logo-vogel {
     width: 75%;
-    margin-top: 10%;
+    margin-top: 20%;
 }
 header figure img{
 	width: 100%;
@@ -94,8 +94,7 @@ figure.detalhe-pontilhados{
     margin-top: 50px;
 }
 .pessoas-reuniao{
-	width: 88%;
-    margin-left: -15px;
+	width: 100%;
 }
 h2.internet-corporativa {
     font-size: 65px;
@@ -116,7 +115,7 @@ h2.internet-corporativa {
 .quadro-direita{
     float: left;
     margin-left: 35px;
-    width: 300px;
+    width: 290px;
 }
 .quadro-velocidade{
 	border: 1px solid #7cce3f;
@@ -141,13 +140,17 @@ h2.internet-corporativa {
 select#cidade {
     width: 160px;
     height: 35px;
+    border: 1px solid #7cce3f;
+    -webkit-border-radius: 0;
+    -moz-border-radius: 0;
+    border-radius: 0;
 }
 .descricao-direita{
     font-family: "SF Display thin";
     width: 220px;
     line-height: 1.5;
     font-size: 17px;
-    margin-top: 10px;
+    margin-top: 33px;
 }
 p.descricao-direita span{
 	font-family: "SF Display medium";
@@ -173,39 +176,47 @@ p.descricao-direita span{
 	display: block;
     font-size: 20px;
     font-family: "SF Display medium";
+    padding-top: 4px;
 }
 .pontilhados-pequeno{
 	width: 120px;
 	float: left; 
+    margin-top: 30px;
 }
 .pontilhados-pequeno img{
 	width: 100%;
-	padding-top: 40px;
 }
-.informativo-solucoes{
+.informativo-solucoes {
     font-family: "SF Display medium";
-    font-size: 30px;
+    font-size: 25px;
     float: left;
-    width: 510px;
-    margin-left: 65px;
-    padding-top: 25px;
+    width: 315px;
+    margin-left: 20px;
+    padding-top: 20px;
 }
-.btn-contrate{
-	color: #fff;
+.btn-contrate {
+    color: #fff;
     background: #7cce3f;
     font-family: "SF Display bold";
     width: 200px;
     float: left;
     text-align: center;
-    margin-left: 65px;
+    margin-left: 140px;
     font-size: 22px;
     padding: 5px 0;
-    margin-top: 15px;
+    margin-top: 10px;
     cursor: pointer;
+}
+.info-internet{
+    float: left;
+    margin-top: 20px;
+}
+.info-internet p {
+    margin-bottom: 2px;
 }
 /*FOOTER*/
 footer{
-	margin-top: 50px;
+    margin-top: 20px;
 }
 .infos-footer{
 	margin-top: 85px;	
@@ -230,4 +241,183 @@ figure.barra-footer img {
 .termos-footer{
 	font-size: 8px;
 	font-family: "SF Display medium";
+}
+.pontilhado-conteudo{
+    width: 300px;
+}
+
+/*MOBILE*/
+@media (max-width: 1999px){
+    .quadro-direita {
+        float: left;
+        margin-left: 15px;
+        width: 200px;
+    }
+}
+
+@media (max-width: 991px){
+    header h1 {
+        font-size: 30px;
+        padding-top: 20%;
+        padding-bottom: 85px;
+    }
+    img.logo-vogel {
+        width: 50%;
+        margin-top: -64%;
+    }
+    figure.text-right {
+        text-align: center;
+    }
+    .margin-top30{
+        margin-top: 30px;
+    }
+    figure.img-destaque {
+        margin-top: 50px;
+    }
+    .title-vogel {
+        font-size: 40px;
+    }
+    .text-description {
+        font-size: 20px;
+        margin-top: 80px;
+    }
+    .pessoas-reuniao {
+        width: 100%;
+        margin-left: -15px;
+    }
+    .informativo-solucoes {
+        font-family: "SF Display medium";
+        font-size: 20px;
+        float: left;
+        width: 100%;
+        margin-left: 0px;
+        padding-top: 0px;
+    }
+    .btn-contrate {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 22px;
+        padding: 5px 0;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    h2.internet-corporativa {
+        font-size: 35px;
+        width: 100%;
+        font-family: "SF Display bold";
+    }
+    .descricao-internet-corporativa {
+        font-family: "SF Display light";
+        font-size: 23px;
+        padding-top: 15px;
+        line-height: 1;
+        margin-bottom: 50px;
+    }
+    .quadro-direita{
+        margin-left: 0;
+        width: 50%;
+        padding-left: 15px;
+    }
+    .aviso-importante {
+        width: 100%!important;
+        border: 1px solid #7cce3f;
+        text-align: center;
+        margin-top: 17px;
+    }
+    .quadro-esquerdo {
+        width: 50%!important;
+    }
+    .promocoes {
+        margin-top: 0;
+    }
+}
+
+@media (max-width: 767px){
+    header h1 {
+        font-size: 30px;
+        padding-top: 24%;
+        padding-bottom: 45px;
+    }
+    img.logo-vogel {
+        width: 50%;
+        margin-top: -94%;
+    }
+    figure.text-right {
+        text-align: center;
+    }
+    .margin-top30{
+        margin-top: 30px;
+    }
+    figure.img-destaque {
+        margin-top: 50px;
+    }
+    .title-vogel {
+        font-size: 40px;
+    }
+    .text-description {
+        font-size: 20px;
+        margin-top: 80px;
+    }
+    .pessoas-reuniao {
+        width: 100%;
+        margin-left: -15px;
+    }
+    .informativo-solucoes {
+        font-family: "SF Display medium";
+        font-size: 20px;
+        float: left;
+        width: 100%;
+        margin-left: 0px;
+        padding-top: 30px;
+    }
+    .btn-contrate {
+        width: 100%;
+        float: left;
+        text-align: center;
+        font-size: 22px;
+        padding: 5px 0;
+        margin-top: 15px;
+        margin-left: 0;
+    }
+    h2.internet-corporativa {
+        font-size: 35px;
+        width: 100%;
+        font-family: "SF Display bold";
+    }
+    .descricao-internet-corporativa {
+        font-family: "SF Display light";
+        font-size: 23px;
+        padding-top: 15px;
+        line-height: 1;
+        margin-bottom: 50px;
+    }
+    .quadro-direita{
+        margin-left: 0;
+        width: 100%;
+    }
+    .aviso-importante {
+        width: 100%!important;
+    }
+    .quadro-esquerdo {
+        width: 100%!important;
+    }
+    .promocoes {
+        margin-top: 0;
+    }
+}
+@media (max-width: 365px){
+    header h1 {
+        font-size: 30px!important;
+        padding-top: 32%!important;
+        padding-bottom: 6px;
+    }
+}
+
+
+/*DESKTOP*/
+@media (min-width: 992px){
+    div#linkContratar.btn-contrate.mobile {
+        display: none!important;
+    }
 }
