@@ -245,6 +245,9 @@ figure.barra-footer img {
 .pontilhado-conteudo{
     width: 300px;
 }
+span i.fa.fa-circle {
+    font-size: 6px;
+}
 
 /*MOBILE*/
 @media (max-width: 1999px){
